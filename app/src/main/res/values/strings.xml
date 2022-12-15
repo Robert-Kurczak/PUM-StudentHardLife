@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StudentHardLife</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_button_description">add button</string>
+    <string name="content_description">picture of task</string>
+    <string name="delete_label">Delete</string>
+    <string name="save_changes_label">Save changes</string>
+</resources>

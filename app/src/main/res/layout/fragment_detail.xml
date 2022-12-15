@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+    >
+        <EditText
+            android:id="@+id/task_subject_details"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Subject"
+            android:autofillHints="Subject"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/task_deadline_details"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="03.04.2000"
+            android:autofillHints="deadline"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/task_title_details"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:textColor="@color/black"
+        android:text="Title"
+        android:textSize="35sp"
+        android:autofillHints="title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/task_content_details"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+
+        android:autofillHints="content"
+        android:inputType="textMultiLine"
+        android:text="ContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContentContent"
+
+
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <ImageButton
+            android:id="@+id/task_image_details"
+
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="20dp"
+
+            android:contentDescription="@string/content_description"
+
+            android:scaleType="fitCenter"
+            android:src="@drawable/android" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="bottom"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save_button"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:layout_weight="2"
+
+                android:text="@string/save_changes_label" />
+
+            <Button
+                android:id="@+id/delete_button"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="@string/delete_label" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
